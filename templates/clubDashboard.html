@@ -3,14 +3,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DashBoard Clubs</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        thead {
+            background-color: #f0f0f0;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
     <h2>Liste des clubs et de leurs points associés</h2>
-    <ul>
-        {% for club in clubs %}
-            <li>{{club["name"]}} - {{club["points"]}} points</li>
-        {% endfor %}
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom du club</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for club in clubs %}
+                <tr>
+                    <td>{{club["name"]}}</td>
+                    <td>{{club["points"]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
     
 </body>
 </html>
