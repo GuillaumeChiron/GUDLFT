@@ -16,7 +16,7 @@ def test_cannot_book_more_places_than_available(client, monkeypatch):
         [
             {
                 "name": "Fall Classic",
-                "date": "2020-10-22 13:30:00",
+                "date": "2028-10-22 13:30:00",
                 "numberOfPlaces": "2",
             }
         ],

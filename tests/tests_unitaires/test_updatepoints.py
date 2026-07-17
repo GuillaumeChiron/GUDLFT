@@ -16,7 +16,7 @@ def test_update_points_are_not_reflected(client, monkeypatch):
         [
             {
                 "name": "Fall Classic",
-                "date": "2020-10-22 13:30:00",
+                "date": "2028-10-22 13:30:00",
                 "numberOfPlaces": "10",
             }
         ],
