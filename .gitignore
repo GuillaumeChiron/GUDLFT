@@ -4,3 +4,7 @@ lib
 .Python
 .envrc
 __pycache__
+.coverage
+htmlcov/
+.vscode/
+.pytest_cache/
